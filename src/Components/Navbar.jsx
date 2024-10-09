@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/real-logo.png"
+import logo from "../assets/pollachi-logo.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,9 +23,11 @@ const Navbar = () => {
                 <div className="flex items-center justify-between sm:py-6 py-3">
                     <div className="flex items-center justify-between w-full">
                         <div className="flex-shrink-0 text-white">
-                            <h1 className="text-2xl sm:text-3xl text-orange-600 font-extrabold text-center lg:text-left text-border tracking-wider">
-                                Pollachi <span className="text-blue-800 text-border">Thiruvizha</span>
-                            </h1>
+                            <img
+                                src={logo}
+                                alt="Logo"
+                                className="w-[120px] lg:w-[200px]"
+                            />
                         </div>
                         <div className="hidden md:block font-semibold text-lg">
                             <div className="-ml-20 flex items-baseline space-x-8">
