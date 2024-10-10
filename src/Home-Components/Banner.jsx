@@ -27,7 +27,7 @@ const Banner = () => {
             <img
                 src={Tree}
                 alt="Pollachi Thiruvizha"
-                className="absolute inset-0 w-full h-full object-cover opacity-10"
+                className="absolute inset-0 w-full h-full object-cover opacity-30"
             />
 
             {/* Fireworks Canvas */}

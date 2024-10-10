@@ -51,7 +51,7 @@ const Hero = () => {
         {/* Fireworks Canvas */}
         <canvas ref={fireworksRef} className="absolute w-full inset-0" />
 
-        <img src={Crowd} className="absolute w-full bottom-0 z-10 opacity-30 drop-shadow-[4px_4px_0px_#F1CF69] " alt="" />
+        <img src={Crowd} className="absolute w-full bottom-0 z-10 opacity-40 drop-shadow-[4px_4px_0px_#F1CF69] " alt="" />
         <img src={Party} className="absolute w-full -top-24 z-20 opacity-40" alt="" />
 
         {/* Content */}
