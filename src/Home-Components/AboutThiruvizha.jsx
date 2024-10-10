@@ -1,5 +1,5 @@
 import React from 'react'
-import Welcome from "../assets/welcome1.jpg"
+import Welcome from "../assets/pollachi-logo.png"
 import Bg from "../assets/bg1.png"
 
 const AboutThiruvizha = () => {
@@ -21,23 +21,23 @@ const AboutThiruvizha = () => {
             </div>
 
 
-            <div className="relative max-w-7xl mx-auto">
-                <h1 className="w-full text-2xl sm:text-3xl text-orange-600 font-extrabold text-center lg:text-left text-border tracking-wider mb-4">
-                    Pollachi <span className="text-blue-800 text-border">Thiruvizha 2024</span>
+            <div className="relative w-[95%] mx-auto">
+                <h1 className="w-full text-2xl sm:text-3xl text-primary bg-gradient-to-r from-primary to-transparent font-extrabold text-center lg:text-left tracking-widest mb-4 p-3 border-l-8 border-secondary px-8">
+                    <span className='text-border-secondary tracking-widest'>Pollachi</span> <span className="text-secondary tracking-widest">Thiruvizha 2024</span>
                 </h1>
-                <p className="text-lg text-gray-800 leading-8 mb-6 text-left">
+                <p className="text-lg text-gray-800 leading-8 mb-6 text-left px-4">
                     Welcome to the first-ever "Pollachi Thiruvizha," a grand celebration of culture, business, and entertainment!
                     This event brings together a wide variety of exciting expos, activities, and showcases, happening for the first time in Pollachi.
                     Join us as we celebrate the rich traditions of Pollachi with a modern twist. From technology expos to cultural fairs,
                     Pollachi Thiruvizha promises an unforgettable experience for all.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
                     <div className="flex justify-center">
                         <img
                             src={Welcome}
                             alt="Thiruvizha Event"
-                            className="rounded-lg shadow-lg object-cover h-64 w-full md:h-80"
+                            className="rounded-lg shadow-md shadow-gray-500 object-cover p-4 w-full "
                         />
                     </div>
 

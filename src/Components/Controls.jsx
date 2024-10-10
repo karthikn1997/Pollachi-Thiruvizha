@@ -39,11 +39,11 @@ function Controls() {
 
             {isVisible && (
                 <button
-                    className=" bg-green-600 hover:shadow-lg hover:shadow-white p-[2px] rounded-full shadow-md transition duration-300 cursor-pointer"
+                    className=" bg-secondary hover:shadow-lg hover:shadow-white p-[2px] rounded-full shadow-md transition duration-300 cursor-pointer"
                     onClick={scrollToTop}
                 >
                     <div className="relative w-12 h-12">
-                        <FaArrowUp className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white  text-2xl hover:scale-125 transition-all 300ms " />
+                        <FaArrowUp className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-primary  text-2xl hover:scale-125 transition-all 300ms " />
                         <svg
                             className="absolute w-full h-full"
                             viewBox="0 0 36 36"
@@ -54,7 +54,7 @@ function Controls() {
                                 cx="18"
                                 cy="18"
                                 r="15.9155"
-                                stroke="white"
+                                stroke="#F1CF69"
                                 strokeWidth="3"
                                 strokeDasharray={`${scrollProgress}, 100`}
                                 strokeLinecap="round"

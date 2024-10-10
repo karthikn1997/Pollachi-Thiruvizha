@@ -93,6 +93,12 @@
 .text-border {
   text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
 }
+.text-border-primary {
+  text-shadow: 2px 2px 0px #F1CF69, -2px -2px 0px #F1CF69, 2px -2px 0px #F1CF69, -2px 2px 0px #F1CF69;
+}
+.text-border-secondary {
+  text-shadow: 2px 2px 0px #334B35, -2px -2px 0px #334B35, 2px -2px 0px #334B35, -2px 2px 0px #334B35;
+}
 .text-border-bottom {
   position: relative;
   display: inline-block;

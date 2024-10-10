@@ -20,17 +20,17 @@ const Navbar = () => {
     return (
         <nav className="nav bg-transparent z-10 top-0 border-b-[1px] border-gray-200 " data-aos="slide-down" data-aos-delay="300">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex items-center justify-between sm:py-6 py-3">
+                <div className="flex items-center justify-between sm:py-4 py-3">
                     <div className="flex items-center justify-between w-full">
                         <div className="flex-shrink-0 text-white">
                             <img
                                 src={logo}
                                 alt="Logo"
-                                className="w-[120px] lg:w-[200px]"
+                                className="w-[120px] lg:w-[150px]"
                             />
                         </div>
                         <div className="hidden md:block font-semibold text-lg">
-                            <div className="-ml-20 flex items-baseline space-x-8">
+                            <div className="-ml-14 flex items-baseline space-x-8">
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
@@ -73,7 +73,7 @@ const Navbar = () => {
                                 </NavLink>
                             </div>
                         </div>
-                        <button className="hidden lg:block bg-gradient-to-r from-orange-500 via-green-500 to-blue-700 hover:bg-gradient-to-l text-white font-semibold py-2 sm:py-2 px-8 rounded-xl transition duration-300 border-[2px] border-white whitespace-nowrap shadow-xl">
+                        <button className="bg-gradient-to-r from-secondary via-secondary to-secondary hover:bg-gradient-to-l text-white font-semibold py-2  px-8 rounded-xl transition duration-300 border-[2px] border-primary whitespace-nowrap shadow-xl">
                             <div className="flex items-center gap-3 font-bold text-xl text-white hover:text-black">
                                 <span className="text-lg lg:text-xl text-white" style={{ textShadow: "2px 2px 0px black" }}>
                                     Book Now

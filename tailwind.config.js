@@ -7,8 +7,12 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xs': '480px', 
+        'xs': '480px',
         'xxs': '375px'
+      },
+      colors: {
+        primary: '#F1CF69',
+        secondary: '#334B35',
       },
     },
   },
