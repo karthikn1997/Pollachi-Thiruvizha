@@ -31,7 +31,7 @@ const Hero = () => {
       <section className="relative min-h-[100vh] w-full flex flex-col lg:flex-row items-center justify-center hero-section gap-8 lg:gap-4 bg-secondary py-8 overflow-hidden border-b-4 border-primary">
 
         {/* Background image */}
-        {/* <div className="absolute inset-0 w-full h-full z-0">
+        <div className="absolute inset-0 w-full h-full z-0">
           <div
             className="w-full h-full bg-cover bg-center"
             style={{
@@ -43,7 +43,7 @@ const Hero = () => {
               opacity: 0.8,
             }}
           ></div>
-        </div> */}
+        </div>
 
 
 
@@ -52,7 +52,7 @@ const Hero = () => {
         <canvas ref={fireworksRef} className="absolute w-full inset-0" />
 
         <img src={Crowd} className="absolute w-full bottom-0 z-10 opacity-30 drop-shadow-[4px_4px_0px_#F1CF69] " alt="" />
-        <img src={Party} className="absolute w-full -top-24 z-20 opacity-20" alt="" />
+        <img src={Party} className="absolute w-full -top-24 z-20 opacity-40" alt="" />
 
         {/* Content */}
         <div className="px-8 pt-10 lg:p-20 flex flex-col justify-center items-center relative z-20 -mt-16">
