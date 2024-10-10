@@ -56,13 +56,13 @@ const Hero = () => {
 
         {/* Content */}
         <div className="px-8 pt-10 lg:p-20 flex flex-col justify-center items-center relative z-20 -mt-16">
-          <div className="flex-shrink-0 text-white top-20 z-50">
+          {/* <div className="flex-shrink-0 text-white top-20 z-50">
             <img
               src={logo}
               alt="Logo"
               className="w-[120px] lg:w-[400px] drop-shadow-[0_0_30px_white] " // adds white stroke-like effect
             />
-          </div>
+          </div> */}
           <h1 className="text-3xl sm:text-4xl lg:text-6xl text-primary font-extrabold mb-4 text-center lg:text-left text-border-secondary tracking-wider waving2 span " >
             <span className="mr-4 " style={{ textShadow: "2px 2px 0px black" }}>Pollachi </span><span className="text-secondary text-border-primary " >Thiruvizha 2024</span>
           </h1>
