@@ -10,9 +10,9 @@
   }
 }
 
-/* * {
-  font-family: 'Lora', serif; 
-} */
+* {
+  scroll-behavior: smooth;
+}
 
 .nav-link {
     position: relative;
@@ -94,7 +94,7 @@
   text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
 }
 .text-border-primary {
-  text-shadow: 2px 2px 0px #F1CF69, -2px -2px 0px #F1CF69, 2px -2px 0px #F1CF69, -2px 2px 0px #F1CF69;
+  text-shadow: 1px 1px 0px #F1CF69, -1px -1px 0px #F1CF69, 1px -1px 0px #F1CF69, -1px 1px 0px #F1CF69;
 }
 .text-border-secondary {
   text-shadow: 2px 2px 0px #334B35, -2px -2px 0px #334B35, 2px -2px 0px #334B35, -2px 2px 0px #334B35;
@@ -209,5 +209,90 @@
 .slick-next {
   right: 5px; 
 }
+
+.flip-card {
+  perspective: 1000px; /* Gives the 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; /* Enables 3D transformations */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Rotates the card on hover */
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the backside when not flipped */
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  background-color: #F1CF69; /* Backside of the card */
+  color: white;
+  transform: rotateY(180deg); /* Flip the backside by 180deg */
+}
+.image-gallery-thumbnail {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.image-gallery-thumbnail img {
+  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.image-gallery-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  width: 50px;
+  height: 50px;
+}
+
+.image-gallery-left-nav, 
+.image-gallery-right-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+}
+.image-gallery .thumbnail-custom {
+  height: 80px; /* Thumbnail height */
+  width: 80px; /* Thumbnail width */
+  border: 2px solid transparent; /* Default border color */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.image-gallery .thumbnail-custom img {
+  object-fit: cover; /* Ensures the image covers the thumbnail area */
+  width: 100%; /* Set image to fill the thumbnail */
+  height: 100%; /* Set image to fill the thumbnail */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.image-gallery .thumbnail-custom:hover {
+  border-color: #ff6347; /* Change border color on hover */
+}
+
+/* Active thumbnail border color */
+.image-gallery .image-gallery-thumbnail--active {
+  border-color: #ff6347; /* Active border color */
+}
+
+
+
+
 
 

@@ -8,6 +8,10 @@ import Projects from '../Home-Components/Projects';
 import AboutThiruvizha from '../Home-Components/AboutThiruvizha';
 import Banner from '../Home-Components/Banner';
 import ThiruvizhaValues from '../Home-Components/ThiruvizhaValues';
+import Gallery from '../Home-Components/Gallery';
+import Events from '../Home-Components/Events';
+import Sponsors from '../Home-Components/Sponsors';
+import Contact from '../Home-Components/Contact';
 
 const Home = () => {
 
@@ -18,14 +22,13 @@ const Home = () => {
   return (
     <div >
       <Hero />
+      <Sponsors />
       <AboutThiruvizha />
-      <Banner />
       <ThiruvizhaValues />
-      {/* <Counters />
-      <HomeAbout />
-      <About />
-      <Future />
-      <Projects /> */}
+      <Gallery />
+      <Events />
+      <Banner />
+      <Contact />
     </div>
   );
 };

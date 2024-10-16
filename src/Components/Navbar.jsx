@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import logo from "../assets/pollachi-logo.png"
+import logo from "../assets/pollachi-logo.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -31,49 +30,18 @@ const Navbar = () => {
                         </div>
                         <div className="hidden md:block font-semibold text-lg">
                             <div className="-ml-14 flex items-baseline space-x-8">
-                                <NavLink
-                                    to="/"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
+                                <a href="#home" className="nav-link">
                                     Home
-                                </NavLink>
-                                <NavLink
-                                    to="/about"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
-                                    About
-                                </NavLink>
-                                <NavLink
-                                    to="/events"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
+                                </a>
+                                <a href="#events" className="nav-link">
                                     Events
-                                </NavLink>
-                                <NavLink
-                                    to="/contact"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
+                                </a>
+                                <a href="#contact" className="nav-link">
                                     Contact
-                                </NavLink>
+                                </a>
                             </div>
                         </div>
-                        <button className="bg-gradient-to-r from-secondary via-secondary to-secondary hover:bg-gradient-to-l text-white font-semibold py-2  px-8 rounded-xl transition duration-300 border-[2px] border-primary whitespace-nowrap shadow-xl">
+                        <button className="bg-[#89A711] hover:bg-gradient-to-l text-white font-semibold py-2  px-8 rounded-xl transition duration-300 border-[2px] border-primary whitespace-nowrap shadow-xl">
                             <div className="flex items-center gap-3 font-bold text-xl text-white hover:text-black">
                                 <span className="text-lg lg:text-xl text-white" style={{ textShadow: "2px 2px 0px black" }}>
                                     Book Now
@@ -125,56 +93,15 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-gray-200 flex justify-center items-center">
                     <div className="px-2 py-2 pb-4 space-x-2 xxs:space-x-4 sm:space-x-8 sm:px-3 text-[14px] sm:text-[16px] font-semibold">
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
-                            }
-                        >
+                        <a href="#home" className="nav-link">
                             Home
-                        </NavLink>
-                        <NavLink
-                            to="/about"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
-                            }
-                        >
-                            About
-                        </NavLink>
-                        <NavLink
-                            to="/products"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
-                            }
-                        >
-                            Products
-                        </NavLink>
-                        <NavLink
-                            to="/services"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
-                            }
-                        >
-                            Services
-                        </NavLink>
-                        <NavLink
-                            to="/contact"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
-                            }
-                        >
+                        </a>
+                        <a href="#events" className="nav-link">
+                            Events
+                        </a>
+                        <a href="#contact" className="nav-link">
                             Contact
-                        </NavLink>
+                        </a>
                     </div>
                 </div>
             )}
