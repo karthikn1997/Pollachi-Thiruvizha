@@ -1,11 +1,11 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import Img1 from "../assets/s-1.jpeg";
-import Img2 from "../assets/s-2.jpeg";
-import Img3 from "../assets/s-3.jpeg";
-import Img4 from "../assets/s-1.jpeg";
-import Img5 from "../assets/s-2.jpeg";
+import Img1 from "../assets/rakla2.jpeg";
+import Img2 from "../assets/dance1.jpeg";
+import Img3 from "../assets/ratinam.jpeg";
+import Img4 from "../assets/stage.jpeg";
+import Img5 from "../assets/dance.jpeg";
 
 const images = [
     { original: Img1, thumbnail: Img1 },

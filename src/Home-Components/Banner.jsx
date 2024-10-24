@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Fireworks } from "fireworks-js";
-import Tree1 from "../assets/tree1.png";
-import Tree2 from "../assets/tree.png";
+import Tree1 from "../assets/exhibitionbg.jpg";
+import Tree2 from "../assets/childrensgame.jpg";
 
 const Banner = () => {
     const fireworksRef = useRef(null);
@@ -76,10 +76,10 @@ const Banner = () => {
 
             {/* Content Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-                <h1 className="w-full text-3xl sm:text-4xl lg:text-6xl text-white font-extrabold text-center tracking-widest text-shadow-lg mb-4">
+                <h1 className="w-full text-3xl sm:text-4xl lg:text-6xl text-white font-extrabold text-center tracking-widest text-shadow-lg mb-4" style={{textShadow: "2px 2px 0px black"}}>
                     {slides[currentSlide].text}
                 </h1>
-                <p className="text-2xl md:text-5xl mb-6 max-w-5xl text-gray-100 transition-opacity duration-1000 tracking-widest">
+                <p className="text-2xl md:text-5xl mb-6 max-w-5xl text-gray-100 transition-opacity duration-1000 tracking-widest font-bold" style={{textShadow: "2px 2px 0px black"}}>
                     {formatDateWithSuffix(slides[currentSlide].date)}
                 </p>
                 {/* <button className="bg-gradient-to-r from-primary via-secondary to-primary hover:from-secondary hover:to-primary text-white font-bold py-3 px-10 rounded-2xl transition-all duration-300 border-2 border-primary shadow-lg hover:shadow-2xl transform hover:scale-105">

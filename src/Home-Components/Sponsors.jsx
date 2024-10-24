@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Logo from "../assets/s-1.jpeg"
+import Logo from "../assets/dj.jpeg"
 
 // Dummy sponsors data
 const sponsors = [
@@ -39,7 +39,7 @@ const Sponcers = () => {
               <img
                 src={sponsor.logo}
                 alt={sponsor.name}
-                className="mx-auto w-28 h-28 rounded-[50%] border-2 border-primary p-1"
+                className="mx-auto w-28 h-28 rounded-[50%] border-2 border-primary p-1 object-cover"
               />
               <p className="mt-2 text-lg text-white">{sponsor.name}</p>
             </div>

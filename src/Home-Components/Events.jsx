@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Img from "../assets/bg1.jpg"
+import Img from "../assets/rakla2.jpeg"
 
 // Sample event data for each day
 const eventData = {
